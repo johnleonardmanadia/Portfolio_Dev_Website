@@ -1,134 +1,135 @@
-
 /* ==========================================================================
    RESET & BASE STYLES
    ========================================================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 16px;
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-    background-color: var(--bg-main);
-    color: var(--text-main);
-    font-family: var(--font-body);
-    line-height: 1.6;
-    overflow-x: hidden;
-    transition: background-color 0.4s ease, color 0.4s ease;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-button, input, textarea {
-    font-family: inherit;
-    outline: none;
-    border: none;
+button,
+input,
+textarea {
+  font-family: inherit;
+  outline: none;
+  border: none;
 }
 
 .container {
-    width: 90%;
-    max-width: 1280px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .section {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
 .section-tag {
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .section-title {
-    font-family: var(--font-heading);
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 50px;
-    position: relative;
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
 }
 
 .dot {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .text-accent {
-    color: var(--accent);
+  color: var(--accent);
 }
-
-
 
 /* ==========================================================================
    BUTTONS
    ========================================================================== */
 .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 28px;
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: var(--transition);
-    text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
 }
 
 .btn-primary {
-    background-color: var(--accent);
-    color: #FFFFFF;
+  background-color: var(--accent);
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-    background-color: var(--accent-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px var(--accent-glow);
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px var(--accent-glow);
 }
 
 .btn-outline {
-    background-color: transparent;
-    color: var(--text-main);
-    border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
 }
 
 .btn-outline:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .btn-sm {
-    padding: 8px 18px;
-    font-size: 0.8rem;
+  padding: 8px 18px;
+  font-size: 0.8rem;
 }
 
 .btn-block {
-    width: 100%;
-    justify-content: center;
+  width: 100%;
+  justify-content: center;
 }

@@ -2,38 +2,39 @@
    COLOR PALETTE & CSS VARIABLES
    ========================================================================== */
 :root {
-    /* Dark Theme Default */
-    --bg-main: #0F172A;
-    --bg-surface: #1E293B;
-    --bg-card: #182232;
-    --text-main: #F8FAFC;
-    --text-muted: #94A3B8;
-    --accent: #06B6D4;
-    --accent-hover: #0891B2;
-    --accent-glow: rgba(6, 182, 212, 0.15);
-    --border-color: rgba(255, 255, 255, 0.08);
-    --navbar-bg: rgba(15, 23, 42, 0.85);
-    --shadow-color: rgba(0, 0, 0, 0.3);
+  /* Dark Theme Default */
+  --bg-main: #0f172a;
+  --bg-surface: #1e293b;
+  --bg-card: #182232;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #06b6d4;
+  --accent-hover: #0891b2;
+  --accent-glow: rgba(6, 182, 212, 0.15);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --navbar-bg: rgba(15, 23, 42, 0.85);
+  --shadow-color: rgba(0, 0, 0, 0.3);
 
-    /* Typography */
-    --font-heading: 'Space Grotesk', sans-serif;
-    --font-body: 'Manrope', sans-serif;
+  /* Typography */
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
-    /* Transitions */
-    --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Light Theme Variables */
 [data-theme="light"] {
-    --bg-main: #F8FAFC;
-    --bg-surface: #FFFFFF;
-    --bg-card: #F1F5F9;
-    --text-main: #0F172A;
-    --text-muted: #64748B;
-    --accent: #0284C7;
-    --accent-hover: #0369A1;
-    --accent-glow: rgba(2, 132, 199, 0.12);
-    --border-color: rgba(0, 0, 0, 0.08);
-    --navbar-bg: rgba(248, 250, 252, 0.88);
-    --shadow-color: rgba(0, 0, 0, 0.06);
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-card: #f1f5f9;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --accent: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-glow: rgba(2, 132, 199, 0.12);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --navbar-bg: rgba(248, 250, 252, 0.88);
+  --shadow-color: rgba(0, 0, 0, 0.06);
 }
