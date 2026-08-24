@@ -1,0 +1,21 @@
+
+/* ==========================================================================
+   BACK TO TOP
+   ========================================================================== */
+.back-to-top {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #04141a;
+  border: none;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow);
+  z-index: 900;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.back-to-top.visible { opacity: 1; transform: translateY(0); }
+.back-to-top[hidden] { display: none; }
