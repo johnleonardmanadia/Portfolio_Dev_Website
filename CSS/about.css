@@ -83,6 +83,25 @@
     object-fit: cover;
 }
 
+
+
+
+.about-card-meta {
+    display: flex;
+    gap: 30px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+
+
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .about-header {
