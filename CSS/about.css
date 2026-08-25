@@ -102,6 +102,24 @@
 
 
 
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  padding: 16px;
+  margin-top: 28px;
+  max-width: 320px;
+}
+.about-card img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; }
+
+
+
+
+
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .about-header {
