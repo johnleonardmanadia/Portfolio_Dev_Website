@@ -1,0 +1,131 @@
+/* ==========================================================================
+   SKILLS
+   ========================================================================== */
+
+
+/* ==========================================================================
+   SKILLS
+   ========================================================================== */
+
+
+:root {
+  /* Dark Theme Default */
+  --bg-main: #0f172a;
+  --bg-surface: #1e293b;
+  --bg-card: #182232;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #06b6d4;
+  --accent-hover: #0891b2;
+  --accent-glow: rgba(6, 182, 212, 0.15);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --navbar-bg: rgba(15, 23, 42, 0.85);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+
+  /* Typography */
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Radius */
+  --radius-m: 12px;
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-card: #f1f5f9;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --accent: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-glow: rgba(2, 132, 199, 0.12);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --navbar-bg: rgba(248, 250, 252, 0.88);
+  --shadow-color: rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+   
+
+
+
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+.skill-category-title {
+  font-size: 1rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 22px;
+}
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.skill-card {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-m);
+  padding: 16px 18px;
+  transition:
+    border-color 0.25s var(--ease),
+    transform 0.25s var(--ease);
+}
+.skill-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.skill-card > i {
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+.skill-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.skill-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.skill-bar {
+  grid-column: 2;
+  height: 4px;
+  background: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.skill-bar span {
+  display: block;
+  height: 100%;
+  width: var(--level);
+  background: var(--accent);
+  border-radius: 4px;
+  animation: fill-skill-bar 1.1s var(--ease) both;
+}
+
+@keyframes fill-skill-bar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--level);
+  }
+}
