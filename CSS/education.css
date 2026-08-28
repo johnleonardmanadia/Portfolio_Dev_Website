@@ -1,0 +1,88 @@
+
+
+/* ==========================================================================
+   EDUCATION SECTION
+   ========================================================================== */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.container-educ {
+    padding: 90px;
+}
+
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 13px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--bg-main);
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.timeline-date {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.timeline-degree {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin: 5px 0;
+}
+
+.timeline-school {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.timeline-desc {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.timeline-tags span {
+    background-color: var(--bg-card);
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: var(--text-muted);
+}
